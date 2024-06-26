@@ -3,14 +3,13 @@
 {%block content%}
     {% load static %}
     {% if user.username %}
-    <h1> WELCOME, {{user.username}} </h1>
     <html lang="en" dir="ltr">
     <link rel="stylesheet" href="{% static 'landing.css'%}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   <div class="img"></div>
   <div class="center">
-    <div class="title">Create Amazing Website</div>
-    <div class="sub_title">Pure HTML & CSS Only</div>
+    <div class="title">Welcome to PlanPro, {{user.username}} </div>
+    <div class="sub_title">Keeps your tasks on track</div>
   </div>
 </body>
 </html>
